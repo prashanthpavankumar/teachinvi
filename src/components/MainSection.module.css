@@ -411,12 +411,10 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(
-    to top,
-    rgba(5, 8, 17, 0.95) 0%,
-    rgba(5, 8, 17, 0.5) 45%,
-    rgba(5, 8, 17, 0.25) 100%
-  );
+  background: linear-gradient(to top,
+      rgba(5, 8, 17, 0.95) 0%,
+      rgba(5, 8, 17, 0.5) 45%,
+      rgba(5, 8, 17, 0.25) 100%);
   pointer-events: none;
 }
 
@@ -740,4 +738,277 @@
   margin-top: 1.5rem;
   text-transform: uppercase;
   opacity: 0.9;
+}
+
+/* RESPONSIVE DESIGN & BREAKPOINT ADAPTATIONS */
+
+/* Tablet & Mid-Size Monitors (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .fullScene {
+    padding: 4rem 1.75rem;
+  }
+
+  .collageGrid {
+    gap: 2.5rem;
+  }
+
+  .detailsGrid {
+    gap: 2rem;
+  }
+}
+
+/* Mobile Phones & Mobile Browsers (max-width: 768px) */
+@media (max-width: 768px) {
+  .fullScene {
+    min-height: auto;
+    padding: 4.5rem 1.25rem;
+  }
+
+  .centerComposition {
+    padding: 0 0.5rem;
+  }
+
+  .kicker {
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+  }
+
+  .editorialSub {
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+  }
+
+  .heroName {
+    font-size: clamp(2.5rem, 8.5vw, 4.25rem);
+  }
+
+  .questionTitle {
+    font-size: clamp(1.85rem, 6vw, 3rem);
+    margin-bottom: 2.5rem;
+  }
+
+  .questionActions {
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    min-height: 120px;
+  }
+
+  .primaryYesBtn {
+    font-size: 1.05rem;
+    padding: 1.1rem 2.25rem;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .secondaryNoBtn {
+    font-size: 0.95rem;
+    padding: 0.85rem 1.75rem;
+  }
+
+  .transitionCard {
+    padding: 1.75rem 1rem;
+  }
+
+  .transitionText {
+    font-size: clamp(2.25rem, 8vw, 4rem);
+  }
+
+  .heroTitle {
+    font-size: clamp(2.5rem, 8.5vw, 4.5rem);
+    margin-bottom: 1.75rem;
+  }
+
+  .editorialDateBlock {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .dateNumber {
+    font-size: clamp(3.25rem, 12vw, 5.5rem);
+  }
+
+  .dateMonth {
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
+  }
+
+  .dateYear {
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
+  }
+
+  .storyComposition {
+    gap: 1.75rem;
+  }
+
+  .storyLine {
+    font-size: clamp(1.35rem, 4.5vw, 2.25rem);
+  }
+
+  .storyHighlight {
+    font-size: clamp(1.65rem, 5.5vw, 2.75rem);
+  }
+
+  .storyPunch {
+    font-size: clamp(1.85rem, 6.5vw, 3.25rem);
+  }
+
+  .personalizedHeader {
+    font-size: clamp(1.65rem, 5.5vw, 2.5rem);
+    margin-bottom: 2rem;
+  }
+
+  .editorialLetterBox {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .letterQuoteMark {
+    font-size: 3.5rem;
+  }
+
+  .letterMessage {
+    font-size: clamp(1.1rem, 3.5vw, 1.35rem);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .galleryScene {
+    padding: 4rem 1rem;
+  }
+
+  .galleryHeader {
+    margin-bottom: 3rem;
+  }
+
+  .galleryTitle {
+    font-size: clamp(2.25rem, 7.5vw, 3.75rem);
+  }
+
+  .collageGrid {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .photoFrame {
+    padding: 1.75rem 1.25rem;
+    border-radius: 20px;
+    min-height: 320px !important;
+  }
+
+  .photoTitle {
+    font-size: clamp(1.35rem, 4.5vw, 1.85rem);
+  }
+
+  .celebrationMainTitle {
+    font-size: clamp(2.75rem, 10vw, 5.5rem);
+  }
+
+  .celebrationBanner {
+    font-size: clamp(1.1rem, 3.75vw, 1.75rem);
+    padding: 0.6rem 1.35rem;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .detailBlock {
+    padding: 1.75rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .detailBlockFull {
+    padding: 2rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .bigDateNum {
+    font-size: clamp(3.25rem, 10vw, 5rem);
+  }
+
+  .detailTextHuge {
+    font-size: clamp(1.85rem, 6vw, 3rem);
+  }
+
+  .countdownTitle {
+    font-size: clamp(2.25rem, 7.5vw, 3.75rem);
+  }
+
+  .countdownGrid {
+    gap: 0.75rem;
+  }
+
+  .countUnit {
+    padding: 1rem 1.1rem;
+    min-width: 72px;
+    border-radius: 14px;
+  }
+
+  .countNum {
+    font-size: clamp(1.85rem, 6vw, 3rem);
+  }
+
+  .countLabel {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+  }
+
+  .finalInvTitle {
+    font-size: clamp(1.85rem, 6vw, 3.25rem);
+    margin-bottom: 2rem;
+  }
+
+  .finalYesBtn {
+    font-size: 1.15rem;
+    padding: 1.1rem 2.5rem;
+  }
+
+  .finaleScene {
+    padding: 4rem 1.25rem;
+  }
+
+  .thankYouHeading {
+    font-size: clamp(2.75rem, 9vw, 5.5rem);
+    margin-bottom: 2rem;
+  }
+
+  .appreciationLines {
+    font-size: clamp(1.1rem, 3.75vw, 1.5rem);
+    margin-bottom: 2.5rem;
+  }
+
+  .happyTitleBlock {
+    margin-bottom: 2.5rem;
+  }
+
+  .happyTitle {
+    font-size: clamp(1.65rem, 5.5vw, 2.5rem);
+  }
+
+  .happyName {
+    font-size: clamp(1.25rem, 4vw, 1.85rem);
+  }
+
+  .creditsTag {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* Small Phones (max-width: 380px) */
+@media (max-width: 380px) {
+  .fullScene {
+    padding: 3.5rem 1rem;
+  }
+
+  .photoFrame {
+    padding: 1.25rem 1rem;
+    min-height: 280px !important;
+  }
+
+  .countUnit {
+    padding: 0.75rem 0.85rem;
+    min-width: 65px;
+  }
 }

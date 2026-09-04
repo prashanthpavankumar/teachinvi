@@ -28,8 +28,11 @@ export default function QuestionExperience({ faculty, onYesSelected }: Props) {
   const handleNoInteraction = () => {
     if (noIndex < NO_STATES.length - 1) {
       setNoIndex((prev) => prev + 1);
-      const randomX = (Math.random() - 0.5) * 260;
-      const randomY = (Math.random() - 0.5) * 180;
+      const isSmallScreen = typeof window !== "undefined" && window.innerWidth < 640;
+      const rangeX = isSmallScreen ? 90 : 260;
+      const rangeY = isSmallScreen ? 70 : 180;
+      const randomX = (Math.random() - 0.5) * rangeX;
+      const randomY = (Math.random() - 0.5) * rangeY;
       setNoOffset({ x: randomX, y: randomY });
     }
   };

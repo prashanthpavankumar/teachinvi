@@ -52,7 +52,7 @@ const MEMORIES: MemoryItem[] = [
   {
     id: "m3",
     category: "DEPARTMENT & LAB",
-    title: "COMPUTER ENGINEERING LAB",
+    title: "COMPUTER LABS",
     rotation: 3,
     width: "650px",
     minHeight: "440px",
@@ -85,9 +85,10 @@ export default function MemoriesGallery() {
             key={item.id}
             initial={{ opacity: 0, y: 40, rotate: 0 }}
             whileInView={{ opacity: 1, y: 0, rotate: item.rotation }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.8, delay: idx * 0.15 }}
             whileHover={{ scale: 1.04, rotate: 0, zIndex: 20 }}
+            whileTap={{ scale: 0.98 }}
             className={styles.photoFrame}
             style={{
               width: "100%",
