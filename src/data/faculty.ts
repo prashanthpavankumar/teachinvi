@@ -139,6 +139,21 @@ export const faculty: Record<string, FacultyMember> = {
     name: "Kanakaraju Sir (911?)",
     department: "Mechanical Engineering",
     message: "Thank you for your dedication and for sharing your deep expertise in Engineering Drawing and Industrial Management & Entrepreneurship."
+  },
+  "05/07": {
+    name: "Syamala Ma'am",
+    department: "Electronics and Communication Engineering",
+    message: "Thank you for your valuable D.E classes and for your charmness"
+  },
+  "02/08": {
+    name: "Lakshmi Ma'am",
+    department: "Basic Sciences English Communication",
+    message: "Thank you for empowering our communication skills and building our confidence."
+  },
+  "26/04": {
+    name: "Murthy Sir",
+    department: "Basic Department",
+    message: "Thank you for your dedication and for sharing your deep expertise in Engineering Drawing."
   }
 };
 
